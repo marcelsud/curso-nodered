@@ -1,0 +1,388 @@
+[
+    {
+        "id": "6d48db75c7ed201d",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "748269ed39c253f3",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "dark"
+            }
+        },
+        "site": {
+            "name": "Ala Aruana - Automação",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "none",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "11eca77f4c1de6c8",
+        "type": "ui_tab",
+        "name": "Controle de Temperatura",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "0230a64b86985ca0",
+        "type": "ui_group",
+        "name": "Salão Sacramental",
+        "tab": "11eca77f4c1de6c8",
+        "order": 1,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4c0cbdd6b1084445",
+        "type": "ui_group",
+        "name": "Salão Cultural",
+        "tab": "11eca77f4c1de6c8",
+        "order": 2,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c02d7d38983a6140",
+        "type": "ui_tab",
+        "name": "Portas",
+        "icon": "door",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "42a1f94e922f13cb",
+        "type": "ui_group",
+        "name": "Portão do Estacionamento",
+        "tab": "c02d7d38983a6140",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7c7ff8635efcfdbb",
+        "type": "ui_gauge",
+        "z": "6d48db75c7ed201d",
+        "name": "",
+        "group": "0230a64b86985ca0",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "",
+        "label": "ºC",
+        "format": "{{value}}",
+        "min": "17",
+        "max": "30",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 990,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "32cbe8e07d750939",
+        "type": "ui_slider",
+        "z": "6d48db75c7ed201d",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "0230a64b86985ca0",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "17",
+        "max": "30",
+        "step": 1,
+        "className": "",
+        "x": 810,
+        "y": 400,
+        "wires": [
+            [
+                "7c7ff8635efcfdbb"
+            ]
+        ]
+    },
+    {
+        "id": "72dcdb92b00a39ae",
+        "type": "ui_gauge",
+        "z": "6d48db75c7ed201d",
+        "name": "",
+        "group": "4c0cbdd6b1084445",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "",
+        "label": "ºC",
+        "format": "{{value}}",
+        "min": "17",
+        "max": "30",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 990,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "3495548ce16e66c7",
+        "type": "ui_slider",
+        "z": "6d48db75c7ed201d",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "4c0cbdd6b1084445",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "17",
+        "max": "30",
+        "step": 1,
+        "className": "",
+        "x": 810,
+        "y": 480,
+        "wires": [
+            [
+                "72dcdb92b00a39ae"
+            ]
+        ]
+    },
+    {
+        "id": "ee97d506221fc491",
+        "type": "ui_switch",
+        "z": "6d48db75c7ed201d",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "42a1f94e922f13cb",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 650,
+        "y": 740,
+        "wires": [
+            [
+                "c7f469bcf6ab5dfb"
+            ]
+        ]
+    },
+    {
+        "id": "6acd2328bb51e0c5",
+        "type": "ui_text",
+        "z": "6d48db75c7ed201d",
+        "group": "42a1f94e922f13cb",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Status",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1170,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "c7f469bcf6ab5dfb",
+        "type": "switch",
+        "z": "6d48db75c7ed201d",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "jsonata"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 790,
+        "y": 740,
+        "wires": [
+            [
+                "a66f4f35bc0a65a7"
+            ],
+            [
+                "0805af8a854e011d"
+            ]
+        ]
+    },
+    {
+        "id": "a66f4f35bc0a65a7",
+        "type": "template",
+        "z": "6d48db75c7ed201d",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "Aberto",
+        "output": "str",
+        "x": 980,
+        "y": 700,
+        "wires": [
+            [
+                "6acd2328bb51e0c5"
+            ]
+        ]
+    },
+    {
+        "id": "0805af8a854e011d",
+        "type": "template",
+        "z": "6d48db75c7ed201d",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "Fechado",
+        "output": "str",
+        "x": 980,
+        "y": 760,
+        "wires": [
+            [
+                "6acd2328bb51e0c5"
+            ]
+        ]
+    }
+]
