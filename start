@@ -1,0 +1,6 @@
+#!/bin/bash
+
+npm install -g node-red
+cd data-node-red && npm install
+cd $HOME
+node-red -u data-node-red
